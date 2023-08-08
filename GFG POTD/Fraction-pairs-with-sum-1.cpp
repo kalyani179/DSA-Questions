@@ -8,7 +8,7 @@ class Solution
         for(int i=0;i<n;i++){
             double x = double(denominator[i]-numerator[i])/double(denominator[i]);
             double y = double(numerator[i])/double(denominator[i]);
-            if(m.find(x)!=m.end()){
+            if(m[x]){
                 count+=m[x];
             }
             m[y]++;
